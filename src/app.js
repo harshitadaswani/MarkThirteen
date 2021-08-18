@@ -7,12 +7,14 @@ document.addEventListener("submit", loadingOn);
 function loadingOn(e) {
   e.preventDefault();
   hide();
+  result.classList.add("hidden");
   loadingGIF.classList.remove("hidden");
   setTimeout(clickHandler, 3000);
 }
 
 function clickHandler() {
   loadingGIF.classList.add("hidden");
+  result.classList.remove("hidden");
   hide();
   var bdayStr = dateInput.value;
   var listOfDate = bdayStr.split("-");

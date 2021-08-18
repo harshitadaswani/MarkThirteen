@@ -3,7 +3,6 @@
 :root {
   --primary: "Crimson Text", serif;
   --secondary: "Source Serif Pro", serif;
-  --tertiary: "STIX Two Text", serif;
 }
 
 body {
@@ -16,23 +15,31 @@ body {
 }
 
 section {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
   text-align: center;
 }
 
 h1 {
   font-size: 2.4em;
-  font-family: var(--tertiary);
+  font-family: var(--secondary);
   font-weight: bold;
 }
 
 p {
   text-align: center;
-  font-family: var(--primary);
+  font-family: var(--secondary);
   font-size: 1.5em;
   font-weight: bold;
-  padding-top: 2rem;
+  padding-top: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.info {
+  text-align: center;
+  font-family: var(--secondary);
+  font-size: 1.2em;
 }
 
 label {
@@ -73,7 +80,7 @@ button {
 }
 
 #timer {
-  width: 50%;
+  width: 25%;
   height: 20%;
 }
 
