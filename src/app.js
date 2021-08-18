@@ -6,22 +6,17 @@ document.addEventListener("submit", clickHandler);
 function clickHandler(e) {
   e.preventDefault();
   hide();
-  //show(dateInput.value);
   var bdayStr = dateInput.value;
   var listOfDate = bdayStr.split("-");
-  //show(listOfDate);
   var date = {
     day: Number(listOfDate[2]),
     month: Number(listOfDate[1]),
     year: Number(listOfDate[0])
   };
-  //console.log(date);
   var isPalindromeDate = checkPalindromeForAllDateFormats(date);
-  //console.log(isPalidromeDate);
   if (isPalindromeDate) {
     show("YAYYY!!! It's a Palindrome Birthday :)");
   } else {
-    //show("NAYYY!!! It's not a Palindrome Birthday :(");
     var [counter1, nextDate] = getNextPalindromeDate(date);
     var [counter2, previousDate] = getPreviousPalindromeDate(date);
     if (counter1 < counter2) {
@@ -33,29 +28,16 @@ function clickHandler(e) {
         `The previous Palindrome Date is ${previousDate.day}-${previousDate.month}-${previousDate.year}, you missed it by ${counter2} days :( `
       );
     }
-    // show(
-    //   `The next Palindrome Date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${counter1} days :(
-    //    The previous Palindrome Date is ${previousDate.day}-${previousDate.month}-${previousDate.year}, you missed it by ${counter2} days :(`
-    // );
   }
 }
 
 function reverseStr(str) {
-  var listofChars = str.split("");
-  var reverseListOfChars = listofChars.reverse();
-  var reversedStr = reverseListOfChars.join("");
-  return reversedStr;
-  //return str.split("").reverse().join("")
+  return str.split("").reverse().join("");
 }
 
 function isPalindrome(str) {
   var reverse = reverseStr(str);
-  if (str === reverse) {
-    return true;
-  } else {
-    return false;
-  }
-  //return str === reverse;
+  return str === reverse;
 }
 
 function convertDateToString(date) {
@@ -98,11 +80,7 @@ function checkPalindromeForAllDateFormats(date) {
 }
 
 function isLeapYear(year) {
-  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 }
 
 function getNextDate(date) {
@@ -203,19 +181,3 @@ function show(text) {
 function hide() {
   result.style.display = "none";
 }
-
-// var date = {
-//   day: 01,
-//   month: 03,
-//   year: 2000
-// };
-
-//console.log(getPreviousPalindromeDate(date));
-//console.log(getPreviousDate(date));
-//console.log(getNextPalindromeDate(date));
-//console.log(getNextDate(date));
-//console.log(isLeapYear(date.year));
-//console.log(checkPalindromeForAllDateFormats(date));
-//console.log(getDateInAllFormats(date));
-//console.log(convertDateToString(date));
-//console.log(isPalindrome("racecar"));
