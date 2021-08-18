@@ -32,8 +32,8 @@ p {
   font-size: 1.5em;
   font-weight: bold;
   padding-top: 1rem;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .info {
@@ -80,7 +80,7 @@ button {
 }
 
 #timer {
-  width: 30%;
+  width: 50%;
   height: 25%;
 }
 
