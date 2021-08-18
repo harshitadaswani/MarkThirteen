@@ -1,10 +1,18 @@
 var dateInput = document.querySelector(".input");
 var result = document.querySelector(".output");
+var loadingGIF = document.querySelector("#timer");
 
-document.addEventListener("submit", clickHandler);
+document.addEventListener("submit", loadingOn);
 
-function clickHandler(e) {
+function loadingOn(e) {
   e.preventDefault();
+  hide();
+  loadingGIF.classList.remove("hidden");
+  setTimeout(clickHandler, 3000);
+}
+
+function clickHandler() {
+  loadingGIF.classList.add("hidden");
   hide();
   var bdayStr = dateInput.value;
   var listOfDate = bdayStr.split("-");

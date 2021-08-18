@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=STIX+Two+Text:ital,wght@1,700&family=Source+Serif+Pro&display=swap");
+
+:root {
+  --primary: "Crimson Text", serif;
+  --secondary: "Source Serif Pro", serif;
+  --tertiary: "STIX Two Text", serif;
+}
+
+body {
+  margin: 0px;
+  background-image: url("bg1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-size: 100% 100%;
+}
+
+section {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.4em;
+  font-family: var(--tertiary);
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+  font-family: var(--primary);
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+label {
+  text-align: center;
+  font-family: var(--secondary);
+  font-size: 1.5em;
+}
+
+input {
+  text-align: center;
+  font-family: var(--secondary);
+  font-size: 1.2em;
+  display: block;
+  padding: 0.5rem;
+  padding-right: 1rem;
+  border-radius: 20px;
+  border: none;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  display: block;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-family: var(--secondary);
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#timer {
+  width: 50%;
+  height: 20%;
+}
+
+.footer {
+  align-content: center;
+  padding: 1rem;
+  bottom: 0%;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+}
+
+.social-container {
+  margin-top: 0rem;
+  flex-direction: column;
+  align-content: center;
+}
+
+.social-icons {
+  padding: 0rem 1rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
