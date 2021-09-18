@@ -35,7 +35,7 @@ function clickHandler() {
       );
     } else {
       show(
-        `The previous Palindrome Date is ${previousDate.day}-${previousDate.month}-${previousDate.year}, you missed it by ${counter2} days :( `
+        `The previous Palindrome Date was ${previousDate.day}-${previousDate.month}-${previousDate.year}, you missed it by ${counter2} days :( `
       );
     }
   }

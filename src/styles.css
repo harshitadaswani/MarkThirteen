@@ -80,8 +80,11 @@ button {
 }
 
 #timer {
-  width: 50%;
-  height: 25%;
+  width: 29%;
+}
+
+.output {
+  padding-bottom: 1rem;
 }
 
 .footer {
